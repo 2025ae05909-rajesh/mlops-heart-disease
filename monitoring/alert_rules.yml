@@ -1,0 +1,30 @@
+groups:
+  - name: heart_disease_alerts
+    interval: 30s
+    rules:
+      - alert: HighErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is {{ $value }}"
+
+      - alert: APIDown
+        expr: up{job="heart-disease-api"} == 0
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Heart Disease API is down"
+          description: "API instance {{ $labels.instance }} is unreachable"
+
+      - alert: HighMemoryUsage
+        expr: container_memory_usage_bytes{name="heart-disease-api"} / 1024 / 1024 > 400
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage"
+          description: "Memory usage is {{ $value }} MB"

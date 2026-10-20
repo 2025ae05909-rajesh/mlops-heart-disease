@@ -1,0 +1,92 @@
+HOW TO CONVERT THE MARKDOWN REPORT TO PDF FOR SUBMISSION
+========================================================
+
+OPTION 1: Using Google Docs (Easiest - Recommended)
+====================================================
+
+1. Open Google Docs: https://docs.google.com
+2. Create new document
+3. Click: File → Open → Upload
+4. Upload this file: C:\Users\i72715\mlops-heart-disease\MLOps_Assignment_Report.md
+5. Or copy-paste content from MLOps_Assignment_Report.md to Google Docs
+6. Replace [INSERT SCREENSHOT X] with your actual screenshots:
+   - Screenshot 1: From screenshots\Screenshot 1.png
+   - Screenshot 2: From screenshots\Screenshot 2.png
+   - Screenshot 3: From screenshots\Screenshot 3.png
+   - Screenshot 4: From screenshots\Screenshot 4.png
+   - Screenshot 5: From screenshots\Screenshot 5.png
+   - Screenshot 6: From screenshots\Screenshot 6.png
+   - Screenshot 7: From screenshots\Screenshot 7.png
+   - Screenshot 9: From screenshots\Screenshot 9.png
+7. Add your Name and ID where marked [Your Name] and [Your ID]
+8. File → Download → PDF Document
+9. Save as: MLOps_Assignment_Report.pdf
+
+OPTION 2: Using Microsoft Word
+===============================
+
+1. Open Microsoft Word
+2. Create new document
+3. Copy content from: C:\Users\i72715\mlops-heart-disease\MLOps_Assignment_Report.md
+4. Paste into Word document
+5. Replace [INSERT SCREENSHOT X] with screenshots:
+   - Right-click → Insert → Pictures → From this device
+   - Select screenshot files from: C:\Users\i72715\mlops-heart-disease\screenshots\
+6. Format as needed
+7. Add Name and ID
+8. File → Save As → PDF Document
+9. Save as: MLOps_Assignment_Report.pdf
+
+OPTION 3: Using Markdown Converter
+===================================
+
+1. Online: https://cloudconvert.com/md-to-pdf
+2. Upload: MLOps_Assignment_Report.md
+3. Convert to PDF
+4. Download the PDF
+5. Add screenshots manually in Word/Google Docs
+6. Add Name and ID
+
+FINAL STEPS
+===========
+
+After creating PDF:
+
+1. Create screenshots folder if not exists:
+   mkdir C:\Users\i72715\mlops-heart-disease\screenshots
+
+2. Rename screenshots for clarity:
+   Screenshot 1.png → 01_metrics.png
+   Screenshot 2.png → 02_tests.png
+   Screenshot 3.png → 03_api_health.png
+   Screenshot 4.png → 04_api_predict.png
+   Screenshot 5.png → 05_models.png
+   Screenshot 6.png → 06_src_folder.png
+   Screenshot 7.png → 07_tests_folder.png
+   Screenshot 9.png → 08_github.png
+
+3. Create ZIP file:
+   Right-click screenshots folder → Send to → Compressed (zipped) folder
+   Result: screenshots.zip
+
+4. Final submission package:
+   ✅ MLOps_Assignment_Report.pdf (10 pages with screenshots)
+   ✅ screenshots.zip (8 images)
+   ✅ GitHub Repository Link
+
+SUBMISSION CHECKLIST
+====================
+
+Before submitting, verify:
+
+☐ Report is 10 pages
+☐ All 8 screenshots are embedded in report
+☐ Report has your Name and ID
+☐ All text is readable and properly formatted
+☐ No typos or formatting issues
+☐ GitHub repo link is valid and public
+☐ All model files are present in models/ folder
+☐ requirements.txt is complete
+☐ tests/ folder has all 14 tests
+
+YOU'RE READY TO SUBMIT! 🎉
